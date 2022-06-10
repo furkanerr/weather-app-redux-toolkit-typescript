@@ -3,19 +3,30 @@ import Service from '../../services/api'
 import styles from './Homepage.module.css'
 import Forecats from '../../components/Forecast/Forecats'
 import SearchBar from '../../components/SearchBar/SearchBar'
-import { fetchWeatherByCityName } from '../../features/weather/weatherSlice'
+import { fetchWeatherByCityName,fetchWeatherByLocation } from '../../features/weather/weatherSlice'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
+import useLocation from '../../Constants/hooks/locationHook'
+import { Coord } from '../../Types/types'
 const HomePage = () => {
 
   const [city,setCity] = useState<string>('')
   const dispatch = useAppDispatch()
   const {loading,error,weather} = useAppSelector(state => state.weather)
+
+  const {position,errorLocation,loadingLocation} = useLocation()
   useEffect(()=>{
     if(city){
     dispatch(fetchWeatherByCityName(city))
     }
+    else{
+      console.log(position)
+      if(position){
+        
+        dispatch(fetchWeatherByLocation(position))
+      }
+    }
   },[city])
-  //if(loading) return <div>Loading...</div>
+  
   return (
     <div className={styles.Container}>
       <SearchBar setCity={setCity}/>
