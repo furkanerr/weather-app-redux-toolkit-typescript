@@ -8,8 +8,8 @@ export const fetchWeatherByCityName = createAsyncThunk(
   'weather/fetchWeatherByCityName',
   async (cityName: string, thunkAPI) => {
     const response = await Service.GetWeatherByCityName(cityName)
-    const user = response 
-    return user
+   return response 
+    
   }
 )
 
@@ -17,9 +17,10 @@ export const fetchWeatherByCityName = createAsyncThunk(
  export const fetchWeatherByLocation = createAsyncThunk(
   'weather/fetchWeatherByLocation',
   async (location:Coord, thunkAPI) => {
+    console.log(location)
     const response = await Service.GetWeatherByCityLocation(location.lon,location.lat)
-    const user = response 
-    return user
+    console.log(response)
+    return response;
   }
 )
 
