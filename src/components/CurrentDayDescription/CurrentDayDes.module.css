@@ -1,0 +1,43 @@
+.weatherDetails{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+  text-align: left;
+  
+}
+.maxTemp{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.minMap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    flex-direction: row;
+    font-weight: bold;
+}
+.wind{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    flex-direction: row;
+    font-weight: bold;
+}
+.maxTempValue{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.minMapValue{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.windValue{
+    font-size: 18px;
+    font-weight: lighter;
+}
