@@ -1,0 +1,26 @@
+.Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: #15202b;
+    width: 40%;
+    color:white;
+    border-radius: 25px;
+}
+.left{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.right{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+}
