@@ -1,10 +1,10 @@
 ## Live: https://weather-app-redux-toolkit-typescript.vercel.app/
 ---------
-This ap is a basic weather forecast app.
+This app is a basic weather forecast app.
 
  * State managament handled by redux-toolkit.
  * Forecast data fetched by users location or city name.
- * Custom locationHook is returing the lat and lon datas.
+ * Custom locationHook is returning the longitude and latitude datas.
 
 -------------------
 
