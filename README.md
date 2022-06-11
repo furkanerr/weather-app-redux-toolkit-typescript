@@ -1,3 +1,13 @@
+## Live: https://weather-app-redux-toolkit-typescript.vercel.app/
+---------
+This app is a basic weather forecast app.
+
+ * State managament handled by redux-toolkit.
+ * Forecast data fetched by users location or city name.
+ * Custom locationHook is returning the longitude and latitude datas.
+
+-------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
