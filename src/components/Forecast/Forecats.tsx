@@ -1,10 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
+
+//styles
 import styles from "./Forecast.module.css";
+
+//componets
 import CurrentDay from "../CurrentDay/CurrentDay";
 import CurrentDayDescription from "../CurrentDayDescription/CurrentDayDescription";
 
-import { useAppSelector, useAppDispatch } from "../../app/hooks";
-import { fetchWeatherByCityName } from "../../features/weather/weatherSlice";
+//types
 import { Forecast } from "../../Types/types";
 
 const Forecats: React.FC<{ weather: Forecast | null }> = ({ weather }) => {

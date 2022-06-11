@@ -1,5 +1,9 @@
 import React from "react";
+
+  //styles
 import styles from "./CurrentDay.module.css";
+
+  //ıcons
 import locationIcon from "../../Constants/Assets/location-pin.png";
 const CurrentDay: React.FC<{
   temp: number | undefined;

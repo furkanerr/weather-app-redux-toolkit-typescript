@@ -1,4 +1,6 @@
 import React from 'react'
+
+//styles
 import styles from './SearchBar.module.css';
 
 const SearchBar:React.FC<{setCity:React.Dispatch<React.SetStateAction<string>>}> = ({setCity} ) => {

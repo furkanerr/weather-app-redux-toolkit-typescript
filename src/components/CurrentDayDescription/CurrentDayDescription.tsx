@@ -1,5 +1,8 @@
 import React from "react";
+
+  //styles
 import styles from "./CurrentDayDes.module.css";
+
 const CurrentDayDescription: React.FC<{
   temp_min: number | undefined;
   temp_max: number | undefined;
