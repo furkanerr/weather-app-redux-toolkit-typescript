@@ -36,7 +36,7 @@ const HomePage = () => {
     <div className={styles.Container}>
       <SearchBar setCity={setCity} />
       {loading === "pending" ? (
-      <BeatLoader loading/>
+      <BeatLoader loading={loading === 'pending' ? true : false}/>
       ) : error ? (
         <div>Error</div>
       ) : weather ? (
