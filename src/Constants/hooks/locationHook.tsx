@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import {useState,useEffect} from 'react'
 import { Coord } from '../../Types/types'
 const useLocation = () => {
   
@@ -10,13 +10,13 @@ const useLocation = () => {
         setError(error.message)
         setLoading(false)
     } 
-    const onSuccess = (position: GeolocationPosition) => {
-        
-        setPosition({lat:position.coords.latitude,lon:position.coords.longitude})
+    const onSuccess =  (position: GeolocationPosition) => {
+        console.log(position)
+        setPosition( {lat:position.coords.latitude,lon:position.coords.longitude})
         setLoading(false)
     }
     
-    useEffect(()=>{
+    useEffect(  ()=>{
         if(navigator.geolocation){
             setLoading(true)
             navigator.geolocation.getCurrentPosition(
