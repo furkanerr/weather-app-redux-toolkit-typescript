@@ -12,16 +12,16 @@ const Forecats: React.FC<{ weather: Forecast | null }> = ({ weather }) => {
     <main className={styles.Container}>
       <section className={styles.left}>
         <CurrentDay
-          temp={weather?.main.temp}
+          temp={weather?.main?.temp}
           name={weather?.name}
-          weather={weather?.weather[0].main}
+          weather={weather?.weather[0]?.main}
         />
       </section>
       <section className={styles.right}>
         <CurrentDayDescription
-          temp_max={weather?.main.temp_max}
-          temp_min={weather?.main.temp_min}
-          windSpeed={weather?.wind.speed}
+          temp_max={weather?.main?.temp_max}
+          temp_min={weather?.main?.temp_min}
+          windSpeed={weather?.wind?.speed}
         />
 
       </section>
