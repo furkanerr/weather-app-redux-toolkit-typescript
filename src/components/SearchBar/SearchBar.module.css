@@ -4,6 +4,7 @@
     flex-direction: row;
     width: 30%;
     margin-bottom: 20px;
+    margin-top: 25px;
 }
 .searchBar{
 
@@ -31,4 +32,12 @@
     border: none;
     color:#fff;
     margin-left: 10px;
+}
+@media screen and (max-width: 768px){
+    .Container{
+        width: 70%;
+    }
+    .submitCityButton{
+        width: 100px;
+    }
 }

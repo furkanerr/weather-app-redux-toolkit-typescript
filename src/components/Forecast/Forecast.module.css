@@ -24,3 +24,16 @@
     
     justify-content: center;
 }
+@media screen and (max-width: 768px){
+    .Container{
+        flex-direction: column;
+        width: 75%;
+    }
+  .left{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+    .right{
+        width: 100%;
+    }
+}
